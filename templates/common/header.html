@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zipai 부동산 헤더</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../static/css/header.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        
+        <!-- Top Utility Menu (Image 2 참조) -->
+        <div class="top-util">
+            <div class="container-xl d-flex justify-content-end">
+                <ul class="util-nav list-unstyled d-flex mb-0">
+                    <li><a href="../member/login.html">로그인</a></li>
+                    <li><a href="../member/signup.html">회원가입</a></li>
+                    <li><a href="../property/wishlist.html">장바구니</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Header & Navigation -->
+        <div class="main-header">
+            <div class="container-xl d-flex justify-content-between align-items-center py-3">
+                
+                <!-- Logo -->
+                <a href="../index.html" class="logo d-flex align-items-center text-decoration-none">
+                    <i class="fas fa-home fa-2x me-2" style="color: var(--primary-color)"></i>
+                    <div class="logo-text">
+                        <h1 class="m-0 fs-4 fw-bold">zipai 부동산</h1>
+                        <span class="d-block">Real Estate Big Data Platform</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu (2-Tier Dropdown) -->
+                <!-- 992px(lg) 이하에서 숨김 처리 -->
+                <nav class="desktop-nav d-none d-lg-block">
+                    <ul class="main-menu d-flex list-unstyled m-0">
+                        <li class="menu-item position-relative px-2">
+                            <a href="../member/login.html" class="menu-link fw-bold">회원 (Member)</a>
+                            <ul class="sub-menu list-unstyled position-absolute bg-white shadow">
+                                <li><a href="../member/login.html">로그인</a></li>
+                                <li><a href="../member/signup.html">회원가입</a></li>
+                                <li><a href="../member/register.html">회원등록</a></li>
+                                <li><a href="../member/mypage.html">마이페이지</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item position-relative px-2">
+                            <a href="../property/search.html" class="menu-link fw-bold">매물 (Property)</a>
+                            <ul class="sub-menu list-unstyled position-absolute bg-white shadow">
+                                <li><a href="../property/search.html">매물검색</a></li>
+                                <li><a href="../property/detail.html">매물상세</a></li>
+                                <li><a href="../property/map.html">지도보기</a></li>
+                                <li><a href="../property/recommend.html">매물추천</a></li>
+                                <li><a href="../property/wishlist.html">관심매물</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item position-relative px-2">
+                            <a href="../board/qna.html" class="menu-link fw-bold">게시판 (Board)</a>
+                            <ul class="sub-menu list-unstyled position-absolute bg-white shadow">
+                                <li><a href="../board/qna.html">Q&A</a></li>
+                                <li><a href="../board/qna_detail.html">Q&A상세</a></li>
+                                <li><a href="../board/write.html">글쓰기</a></li>
+                                <li><a href="../board/trend.html">트렌드</a></li>
+                                <li><a href="../board/about.html">소개</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item position-relative px-2">
+                            <a href="../admin/admin.html" class="menu-link fw-bold">관리자 (Admin)</a>
+                            <ul class="sub-menu list-unstyled position-absolute bg-white shadow">
+                                <li><a href="../admin/admin.html">대시보드</a></li>
+                                <li><a href="../admin/admin_users.html">회원관리</a></li>
+                                <li><a href="../admin/admin_properties.html">매물관리</a></li>
+                                <li><a href="../admin/admin_properties_new.html">신규매물</a></li>
+                                <li><a href="../admin/market_dashboard.html">시장동향</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item position-relative px-2">
+                            <a href="../defense/fraud_result.html" class="menu-link fw-bold">방어 (Defense)</a>
+                            <ul class="sub-menu list-unstyled position-absolute bg-white shadow">
+                                <li><a href="../defense/fraud_result.html">사기조회결과</a></li>
+                                <li><a href="../defense/checklist.html">체크리스트</a></li>
+                                <li><a href="../defense/charter-rate-calculator.html">전세가율계산기</a></li>
+                                <li><a href="../defense/contract-guide.html">계약가이드</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item position-relative px-2">
+                            <a href="../safe/risk_assessment.html" class="menu-link fw-bold">안전 (Safe)</a>
+                            <ul class="sub-menu list-unstyled position-absolute bg-white shadow">
+                                <li><a href="../safe/risk_assessment.html">위험도평가</a></li>
+                                <li><a href="../safe/regional_safety_search.html">지역안전검색</a></li>
+                                <li><a href="../safe/safety_map.html">안전지도</a></li>
+                                <li><a href="../safe/admin_properties_new.html">안전매물등록</a></li>
+                                <li><a href="../safe/market_dashboard.html">안전시장동향</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Hamburger Button (Animated) -->
+                <button class="hamburger-btn border-0 bg-transparent" id="hamburgerMenu" aria-label="Toggle Mega Menu">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mega Menu (Overlay) -->
+        <div class="mega-menu" id="megaMenu">
+            <div class="container-xl">
+                <div class="row g-4">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <h5>Member</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="../member/login.html">login.html</a></li>
+                            <li><a href="../member/signup.html">signup.html</a></li>
+                            <li><a href="../member/register.html">register.html</a></li>
+                            <li><a href="../member/mypage.html">mypage.html</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <h5>Property</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="../property/search.html">search.html</a></li>
+                            <li><a href="../property/detail.html">detail.html</a></li>
+                            <li><a href="../property/map.html">map.html</a></li>
+                            <li><a href="../property/recommend.html">recommend.html</a></li>
+                            <li><a href="../property/wishlist.html">wishlist.html</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <h5>Board</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="../board/qna.html">qna.html</a></li>
+                            <li><a href="../board/qna_detail.html">qna_detail.html</a></li>
+                            <li><a href="../board/write.html">write.html</a></li>
+                            <li><a href="../board/trend.html">trend.html</a></li>
+                            <li><a href="../board/about.html">about.html</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <h5>Admin</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="../admin/admin.html">admin.html</a></li>
+                            <li><a href="../admin/admin_users.html">admin_users.html</a></li>
+                            <li><a href="../admin/admin_properties.html">admin_properties.html</a></li>
+                            <li><a href="../admin/admin_properties_new.html">admin_properties_new.html</a></li>
+                            <li><a href="../admin/market_dashboard.html">market_dashboard.html</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <h5>Defense</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="../defense/fraud_result.html">fraud_result.html</a></li>
+                            <li><a href="../defense/checklist.html">checklist.html</a></li>
+                            <li><a href="../defense/charter-rate-calculator.html">charter-rate-calculator.html</a></li>
+                            <li><a href="../defense/contract-guide.html">contract-guide.html</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <h5>Safe</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="../safe/risk_assessment.html">risk_assessment.html</a></li>
+                            <li><a href="../safe/regional_safety_search.html">regional_safety_search.html</a></li>
+                            <li><a href="../safe/safety_map.html">safety_map.html</a></li>
+                            <li><a href="../safe/admin_properties_new.html">admin_properties_new.html</a></li>
+                            <li><a href="../safe/market_dashboard.html">market_dashboard.html</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Custom JS -->
+    <script src="../../static/js/header.js"></script>
+    
+    <!-- 테스트용 바디 여백 -->
+    <div style="height: 100vh; padding: 50px; text-align: center; background-color: #f4f6f9;">
+        <h2>본문 컨텐츠 영역</h2>
+        <p>화면 너비를 992px 이하로 줄이거나 우측의 햄버거 메뉴를 클릭해보세요.</p>
+    </div>
+
+</body>
+</html>
