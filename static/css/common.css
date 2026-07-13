@@ -8,6 +8,8 @@
     --accent-color: #25436E;      /* 푸터 메인 배경색 */
     --secondary-color: #6C757D;   /* 선, 비활성 요소 색상 */
     --bg-color: #f8f9fa;          /* 밝은 텍스트 색상 */
+    --bg-light: #f8f9fa;          
+    --bg-white: #ffffff;
 
     /* 폰트 변수 */
     --font-title: 'Inter', sans-serif;       /* 영문/숫자/강조용 (sans-serif) */
@@ -21,6 +23,20 @@
     --bp-xxl: 1400px;
 }
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+body {
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: var(--bg-light);
 }

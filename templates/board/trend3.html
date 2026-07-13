@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대출한도 & 금리 계산기 - zipai</title>
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/trend.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- [헤더 메뉴바 영역] 다른 팀원의 헤더 HTML 파일 링크 위치 -->
+
+    <main class="trend-wrapper">
+        <div class="container">
+            <div class="mb-4">
+                <a href="trend1.html" style="color:var(--secondary-color); text-decoration:none;"><i class="fas fa-arrow-left"></i> 뒤로가기</a>
+            </div>
+            <div class="page-header">
+                <h2>금리 계산기 (원리금균등상환)</h2>
+                <p>대출 원금, 연이자율, 대출 기간을 입력하여 매월 상환해야 할 금액을 확인하세요.</p>
+            </div>
+            
+            <div class="calc-container">
+                <form id="calcForm" class="calc-form">
+                    <div class="filter-group mb-3">
+                        <label for="principal">대출 원금 (만원)</label>
+                        <input type="number" id="principal" value="10000" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:4px;" required>
+                    </div>
+                    <div class="filter-group mb-3 mt-3">
+                        <label for="rate">연 이자율 (%)</label>
+                        <input type="number" step="0.1" id="rate" value="3.5" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:4px;" required>
+                    </div>
+                    <div class="filter-group mb-3 mt-3">
+                        <label for="term">대출 기간 (년)</label>
+                        <input type="number" id="term" value="30" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:4px;" required>
+                    </div>
+                    <button type="submit" class="btn-search mt-3">계산하기</button>
+                </form>
+                
+                <div class="calc-result">
+                    <h4>매월 예상 상환액</h4>
+                    <div class="amount" id="calcResultVal">0 원</div>
+                    <p style="font-size:0.85rem; margin-top:10px; opacity:0.8;">※ 본 계산은 원리금균등상환 방식을 기준으로 한 단순 참고용입니다. 실제 은행 심사 결과와 다를 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- [푸터 영역] 다른 팀원의 푸터 HTML 파일 링크 위치 -->
+    <script src="../../static/js/trend.js"></script>
+</body>
+</html>
